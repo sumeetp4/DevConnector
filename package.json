@@ -4,10 +4,10 @@
 	"description": "social network for developers",
 	"main": "server.js",
 	"scripts": {
-		"build": "npm run build --prefix client",
 		"dev": "concurrently \"npm run eserver\" \"npm run flient\"",
 		"eserver": "nodemon server -i client",
-		"flient": "npm start --prefix client"
+		"flient": "npm start --prefix client",
+		"start": "npm run build --prefix client"
 	},
 	"author": "Niha",
 	"license": "MIT",
